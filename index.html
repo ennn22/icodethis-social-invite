@@ -9,41 +9,63 @@
 
   <!-- Change code below this line -->
   <body
-    class="bg-rose-100 h-full flex justify-center items-center min-h-screen"
+    class="bg-rose-50 h-full flex justify-center items-center min-h-screen relative"
   >
-    <div class="bg-zinc-50 w-full max-w-md rounded-md p-6">
-      <div class="bg-rose-100 w-32 h-32 rounded-full p-4">
+    <div
+      class="bg-rose-100 h-1/2 w-3/5 absolute -z-10 rounded-xl bottom-0"
+    ></div>
+    <div class="bg-zinc-50 w-full max-w-md rounded-xl py-10 px-20 shadow-md">
+      <div
+        class="bg-rose-50/90 w-28 h-28 rounded-full p-2 mx-auto mb-4 transition-all duration-700 hover:scale-125"
+      >
         <img
           class="object-cover rounded-full h-full w-full"
           src="https://images.unsplash.com/photo-1542596594-649edbc13630?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="user-img"
         />
       </div>
-      <p class="text-sm">Tina V. invited you to join</p>
-      <p class="text-xl font-bold">Channel name</p>
-      <div class="bg-rose-100">
-        <span class="text-xs">22k Active users</span>
-        <span></span>
-        <span class="text-xs">88k Total users</span>
+      <div class="text-center">
+        <p class="text-sm text-zinc-600 font-light mb-4">
+          Tina V. invited you to join
+        </p>
+        <p class="text-lg font-bold text-zinc-800 mb-4">Channel name</p>
+        <div
+          class="bg-rose-50 rounded p-2 inline-flex items-center justify-center gap-2 mb-4"
+        >
+          <span class="text-xs">22K Active users</span>
+          <span class="h-1 w-1 rounded-full bg-zinc-900 inline-block"></span>
+          <span class="text-xs">88K Total users</span>
+        </div>
       </div>
       <div>
-        <label for="username" class="text-sm">Username</label>
+        <label for="username" class="text-xs text-zinc-700 block mb-1"
+          >Username</label
+        >
         <input
           type="text"
-          class="text-sm"
+          class="text-sm placeholder:text-zinc-800 text-zinc-800 border border-zinc-400 w-full py-3 px-2 rounded bg-transparent focus:outline-rose-800 mb-6"
           placeholder="How do you like people to call you?"
         />
       </div>
-      <div>
-        <input type="checkbox" name="tnc" />
-        <p class="text-xs">
-          I have read and agree to the Terms of service and Privacy policy.
+      <div class="flex gap-2 mb-6">
+        <input type="checkbox" name="tnc" class="w-6 h-6" />
+        <p class="text-sm text-zinc-800">
+          I have read and agree to the
+          <span class="text-rose-800 underline cursor-pointer"
+            >Terms of service</span
+          >
+          and
+          <span class="text-rose-800 underline cursor-pointer"
+            >Privacy policy</span
+          >.
         </p>
       </div>
-      <button>
-        <p>Continue</p>
+      <button class="bg-rose-900 block w-full rounded-md py-4 mb-10">
+        <p class="text-zinc-200 text-sm font-light">Continue</p>
       </button>
-      <a href="#">Already have an account</a>
+      <a href="#" class="text-rose-900 text-sm underline text-center block"
+        >Already have an account</a
+      >
     </div>
   </body>
   <!-- Change code above this line -->
